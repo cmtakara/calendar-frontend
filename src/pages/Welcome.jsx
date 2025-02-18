@@ -1,8 +1,34 @@
 import React from 'react'
+import DailyView from '../components/calendar/DailyView';
+import Goals from '../components/goals/Goals'
+import DailyTasks from '../components/todos/DailyTasks';
+import './Welcome.css';
 
-function Welcome() {
+function Welcome(props) {
+  let demo = props.demo;
+
   return (
-    <div>Welcome</div>
+    demo ?
+      <>
+        <div>The below sample page give you an idea of the types of views and interactions you can have.<br/>
+        To begin customizing your experience sign up and log in.</div>
+        <div className='overview-container'>
+          <DailyView />
+          <div className='side-container'>
+            <Goals />
+            <DailyTasks />
+            <div>Habits - mini game</div>
+          </div>
+        </div>
+      </>
+      :
+      <>
+        <div>Welcome logged in user</div>
+        <div>User Default 1</div>
+        <div>User Default 2</div>
+        <div>User Default 3</div>
+        <div>User Default 4</div>
+      </>
   )
 }
 

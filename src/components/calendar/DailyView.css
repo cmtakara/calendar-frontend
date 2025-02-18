@@ -1,0 +1,5 @@
+.daily {
+    background-color: hsl(0, 0%, 25%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 25px;
+}

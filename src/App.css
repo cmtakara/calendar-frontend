@@ -48,22 +48,22 @@ ul li {
 
 a:link {
   color: hsl(350, 40%, 70%);
-  background-color: hsl(350, 40%, 30%);
+  background-color: hsl(0, 0%, 30%);
 }
 
 a:visited {
   color: hsl(340, 40%, 70%);
-  background-color: hsl(340, 40%, 30%);
+  background-color: hsl(0, 0%, 30%);
 }
 
 a:hover {
   background-color: hsl(290, 40%, 70%);
-  color: hsl(290, 40%, 30%);
+  color: hsl(0, 0%, 30%);
 }
 
 a:active {
   background-color: hsl(200, 40%, 70%);
-  color: hsl(200, 40%, 30%);
+  color: hsl(0, 0%, 30%);
 }
 
 #imageList {

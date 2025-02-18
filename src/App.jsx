@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router';
+import { Routes, Route, Link } from 'react-router';
 import { useState } from 'react';
 import AuthPage from './pages/AuthPage';
 import BrainDumpPage from './pages/BrainDumpPage';
@@ -22,14 +22,20 @@ function App() {
             <div>hi {user.name}</div>
             <h1>Calendar App</h1>
             <Routes>
-              <Route path='/' element={<Welcome />} />
+              <Route path='/' element={<Welcome demo={false}/>} />
               <Route path='/calendar' element={<CalendarPage />} />
               <Route path='/braindump' element={<BrainDumpPage />} />
               <Route path='/todos' element={<TodoPage />} />
             </Routes>
           </>
           :
-          <AuthPage setUser={setUser}/>
+          <>
+          <Link to='/'>Home</Link>&nbsp; | &nbsp;<Link to='/signup'>Sign Up or Sign In</Link>
+          <Routes>
+            <Route path='/' element={<Welcome demo={true}/>}/>
+            <Route path='/signup' element={<AuthPage setUser={setUser}/>} />
+          </Routes>
+          </>
       }
     </>
   )
