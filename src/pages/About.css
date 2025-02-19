@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "skew-block";
+    src: url('../fonts/Pwperspective-y4Jq.ttf'), format('truetype');
+  }
+
+  @font-face {
+    font-family: "autumn-flowers";
+    src: url('../fonts/AutumnFlowers-9YVZK.otf'), format('opentype');
+  }
+
+  @font-face {
+    font-family: "lemon-jelly";
+    src: url('../fonts/LemonJellyPersonalUse-dEqR.ttf'), format('truetype');
+  }
+
+  /* h1 {
+    background-color: hsl(0, 0%, 10%);
+    font-family: "lemon-jelly";
+  }
+
+  h2 {
+    font-family: "autumn-flowers";
+  } */

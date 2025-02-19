@@ -26,6 +26,17 @@ function DailyView() {
                 backColor: 'hsl(0, 75%, 80%)'
             },
             {
+                id: 20,
+                text: "meeting",
+                start: today.setUTCHours(10, 0, 0, 0).toString(),
+                end: today.setUTCHours(10, 30, 0, 0).toString(),
+                participants: 2,
+                fontColor: 'hsl(60, 75%, 20%)',
+                // backColor: 'hsl(0, 0%, 80%)',
+                backColor: 'hsl(60, 75%, 60%)',
+                borderColor: 'hsl(60, 75%, 40%)',
+            },
+            {
                 id: 2,
                 text: "Exercise",
                 start: today.setUTCHours(6, 30, 0, 0).toString(),

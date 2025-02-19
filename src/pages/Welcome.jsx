@@ -2,6 +2,7 @@ import React from 'react'
 import DailyView from '../components/calendar/DailyView';
 import Goals from '../components/goals/Goals'
 import DailyTasks from '../components/todos/DailyTasks';
+import Habits from '../components/habits/Habits';
 import './Welcome.css';
 
 function Welcome(props) {
@@ -17,7 +18,7 @@ function Welcome(props) {
           <div className='side-container'>
             <Goals />
             <DailyTasks />
-            <div>Habits - mini game</div>
+            <Habits />
           </div>
         </div>
       </>

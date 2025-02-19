@@ -6,6 +6,7 @@ import CalendarPage from './pages/CalendarPage';
 import TodoPage from './pages/TodoPage';
 import Welcome from './pages/Welcome';
 import Nav from './components/Nav';
+import About from './pages/About'
 import './App.css'
 import { getUser } from './utilities/users-services';
 
@@ -30,9 +31,10 @@ function App() {
           </>
           :
           <>
-          <Link to='/'>Home</Link>&nbsp; | &nbsp;<Link to='/signup'>Sign Up or Sign In</Link>
+          <Link className='coming-soon-regular' to='/'>Home</Link>&nbsp; | &nbsp;<Link className='coming-soon-regular' to='/signup'>Sign Up or Sign In</Link> | &nbsp;<Link className='coming-soon-regular' to='/about'>About</Link>
           <Routes>
             <Route path='/' element={<Welcome demo={true}/>}/>
+            <Route path='/about' element={<About/>}/>
             <Route path='/signup' element={<AuthPage setUser={setUser}/>} />
           </Routes>
           </>
