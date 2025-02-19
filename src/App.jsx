@@ -9,6 +9,7 @@ import Nav from './components/Nav';
 import About from './pages/About'
 import './App.css'
 import { getUser } from './utilities/users-services';
+import UserContext from './contexts/UserContext';
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -19,6 +20,7 @@ function App() {
         user
           ?
           <>
+            <UserContext.Provider value={{ user }}>
             <Nav />
             <div>hi {user.name}</div>
             <h1>Calendar App</h1>
@@ -28,6 +30,7 @@ function App() {
               <Route path='/braindump' element={<BrainDumpPage />} />
               <Route path='/todos' element={<TodoPage />} />
             </Routes>
+            </UserContext.Provider>
           </>
           :
           <>
