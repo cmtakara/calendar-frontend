@@ -14,6 +14,6 @@ export async function getAllEntries() {
 }
 
 export async function getUserEntries(user) {
-    const response = await axios.get(URL);
+    const response = await axios.get(`${URL}/${user}`);
     return response.data;
 }

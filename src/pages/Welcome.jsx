@@ -17,7 +17,7 @@ function Welcome(props) {
   if (!demo) {
     // const { user } = useContext(UserContext);
     setCurrentUser(userContextValue.user);
-    console.log(userContextValue.user)
+    // console.log(userContextValue.user)
   }
 }
 
