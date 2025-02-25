@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { Navigate } from 'react-router';
 import userService from '../utilities/users-services';
 
 function LoginForm({ setUser }) {
@@ -24,6 +25,7 @@ function LoginForm({ setUser }) {
             const user = await userService.login(credentials);
             console.log(user)
             setUser(user);
+            <Navigate to='/'/>
         } catch (err) {
             setError('Log In Failed - Try Again')
         }
