@@ -37,7 +37,7 @@ function Welcome(props) {
         <div>The below sample page give you an idea of the types of views and interactions you can have.<br/>
         To begin customizing your experience sign up and log in.</div>
         <div className='overview-container'>
-          <DailyView demo={true}/>
+          <DailyView demo={true} user={{}}/>
           <div className='side-container'>
             <Goals  demo={true}/>
             <DailyTasks  demo={true}/>

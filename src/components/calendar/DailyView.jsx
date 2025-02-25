@@ -113,7 +113,7 @@ function DailyView(props) {
         // console.log('not demo')
         // console.log(contextValue.user);
         //   setUserId(user._id);
-    }
+    } 
 
     // configs for calendar views
     // modes are: Day, Week, WorkWeek, Days (custom number), Resources
@@ -127,7 +127,11 @@ function DailyView(props) {
     useEffect(() => {
         // console.log(contextValue.user._id)
         // setUserId(contextValue.user._id);
+        if (!demo) {
         setUserEvents(contextValue.user._id);
+        } else {
+            setUserEvents('');
+        }
     }, [contextValue])
 
     // useEffect(setUserEvents(), []);
